@@ -1,9 +1,12 @@
 module.exports = {
-  entry: './src/app.js',
+  entry: {
+    app: './src/app.js',
+  },
 
   output: {
+    filename: '/bin/[name].js',
+    library: '[name]',
     path: __dirname,
-    filename: 'bin/app.bundle.js',
   },
 
   module: {
@@ -19,4 +22,6 @@ module.exports = {
       },
     ],
   },
+
+  devtool: 'source-map',
 };
