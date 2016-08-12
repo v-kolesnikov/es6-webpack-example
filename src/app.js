@@ -1,6 +1,5 @@
-const content = require('./content.js');
+import factorial from './factorial.js';
+
 require('./style.css');
 
-const f = () => content;
-
-document.write(f());
+document.write(factorial(4));
