@@ -4,7 +4,8 @@
   "description": "ES6 + Webpack example",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ."
+    "lint": "eslint .",
+    "test": "mocha --compilers js:babel-core/register --colors"
   },
   "author": "Vasily Kolesnikov",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "eslint-plugin-import": "^1.13.0",
     "eslint-plugin-jsx-a11y": "^2.1.0",
     "eslint-plugin-react": "^6.0.0",
+    "mocha": "^3.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
   }
