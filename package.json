@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha --compilers js:babel-core/register --colors"
+    "test": "mocha --compilers js:babel-core/register --colors",
+    "build": "webpack --progress --colors"
   },
   "author": "Vasily Kolesnikov",
   "license": "ISC",
