@@ -1,7 +1,0 @@
-extends: airbnb/base
-installedESLint: true
-plugins:
-  - react
-env:
-  browser: true
-  node: true
