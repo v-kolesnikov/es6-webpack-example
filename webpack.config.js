@@ -1,12 +1,14 @@
+const path = require('path');
+
 module.exports = {
   entry: {
-    app: './src/app.js',
+    app: './index',
   },
 
   output: {
-    filename: '/bin/[name].js',
-    library: '[name]',
-    path: __dirname,
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+    publicPath: '/static/',
   },
 
   module: {

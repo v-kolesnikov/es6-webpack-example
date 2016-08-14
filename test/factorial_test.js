@@ -1,6 +1,6 @@
 import assert from 'assert';
 
-import factorial from '../src/factorial.js';
+import factorial from '../lib/factorial.js';
 
 describe('factorial', () => (
   it('should return factorial 4', () => (
